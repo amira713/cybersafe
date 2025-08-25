@@ -1,15 +1,23 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --main-color: var(--main-color,#011024);
+    --icons-spacial-header-color: var(--icons-spacial-header-color,#11b0b3);
+    --h3-main-text-color: var(--h3-main-text-color,#025866);
+    --p-color:var(--p-color,#278897)
+    --div-color: var(--div-background-color,#cdf8fc)
+}
 body{
     font-family: "Roboto", sans-serif;
-    background-color:#011024;
-    
-   
+    background-color:var(--main-color,#011024);
+}
+html{
+    scroll-behavior: smooth;
 }
 /* start components العناصر اللى بشتغل بيها كتير  */
 .special-heading h2 {
-    color: #11b0b3;
+    color: var(--icons-spacial-header-color,#11b0b3);
     font-size: 100px;
     text-align: center;
     margin: 0;
@@ -41,12 +49,18 @@ body{
 }
 .login{
     padding: 5px 15px;
-    background-color: #11b0b3;
+    background-color: var(--icons-spacial-header-color,#11b0b3);
     border: none;
     color: white;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
+    box-shadow: 0 0 5px 3px white ;
+}
+.login:hover{
+    cursor: pointer;
+    background-color: white;
+    color:var(--icons-spacial-header-color,#11b0b3);
 }
 .header .links{
     position: relative; 
@@ -65,7 +79,7 @@ body{
 }
 .header .links .icons span{
     height: 3px;
-    background-color: #11b0b3;
+    background-color: var(--icons-spacial-header-color,#11b0b3);
     margin-bottom: 5px;
 }
 .header .links .icons span:first-child,
@@ -80,7 +94,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #cdf8fc;
+    background-color: var(--div-background-color,#cdf8fc);
     position: absolute;
     right: 0; 
     min-width: 200px;
@@ -97,7 +111,7 @@ body{
     position: absolute;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #cdf8fc transparent;
+    border-color: transparent transparent var(--div-background-color,#cdf8fc) transparent;
     right: 5px;
     top: -20px;
 }
@@ -144,14 +158,14 @@ body{
     padding:  10px;
     background-color: #51feba;
     font-weight: bold;
-    color: #011024;
+    color: var(--main-color,#011024);
     border-radius: 0 25px;
     border: none;
     box-shadow: 0 0 5px 3px white ;
 }
 .register:hover{
     background-color: white;
-    color: #025866;
+    color: var(--h3-main-text-color,#025866);
     box-shadow: 0 0 11px 3px #51feba;
     cursor: pointer;
 }
@@ -170,20 +184,20 @@ body{
     grid-gap: 10px;
 }
 .features .container div{
-     background-color:  #cdf8fc;
+     background-color:  var(--div-background-color,#cdf8fc);
      padding: 10px;
 }
 .features .container div i{
     font-size: 33px;
     padding-top: 15px;
-    color: #11b0b3;
+    color: var(--icons-spacial-header-color,#11b0b3);
 }
 .features .container div h3{
-    color: #025866;
+    color: var(--h3-main-text-color,#025866);
     font-weight:800
 }
 .features .container div p{
-    color: #278897;
+    color: var(--p-color,#278897);
 
 }
 
@@ -206,8 +220,6 @@ body{
     position: absolute;
     top: 10px;
     margin-left: 30px;
-    
-  
 } 
 .services .img{
     width: 250px;
@@ -215,35 +227,30 @@ body{
     position: absolute ;
     top: 5px;
     right: 5px;
-
 }
-   
  .services .serv{
     display: flex;
     margin-bottom: 40px;
 }
-
 .services i{
-    color: #11b0b3;  
+    color: var(--icons-spacial-header-color,#11b0b3);  
    font-size: 30px;
    margin-right: 5px;  
 }
-
 .services .text{
-    background-color:  #cdf8fc;
-    color: #025866;
+    background-color:  var(--div-background-color,#cdf8fc);
+    color: var(--h3-main-text-color,#025866);
     padding: 10px;
     text-align: center;  
     height: 220px;
- 
 } 
 .services .text p{
-     color: #278897;
+     color: var(--p-color,#278897);
      padding-top: 10px;
      line-height: 1.5;
 }
 .special-heading h2 {
-    color: #11b0b3;
+    color: var(--icons-spacial-header-color,#11b0b3);
     font-size: 100px;
     text-align: center;
     margin: 0;
@@ -257,6 +264,138 @@ body{
 }
 
 /* end  services */
+/* start team members */
+
+.team .team-members{
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    justify-items: center;
+    
+}
+.team .image{
+    width: 210px;
+    height: 290px;
+     background-image: 
+    linear-gradient( to bottom right, #05ae6b, #bdfeff ,#5dafb7 ,#dbeff0 , #05ae6b);
+    position: relative;
+    border-radius: 28px 0 ;
+
+}
+.team img{
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 28px 0 ;
+}
+.team .text{
+    color: white;
+    max-width: 200px;
+    text-align: center;
+}
+.team h3{
+    margin-bottom: 0;
+    color: var(--icons-spacial-header-color,#11b0b3)
+}
+.team h4{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 250;
+    color: #c5f9fa
+    
+}
+.team p{
+    margin-top: 5px;
+}
+
+/* end team members */
+/* start about */
+.about{
+    margin: 60px;
+}
+.about .content{
+     width: 100%;
+    height: 320px;
+    padding: 5px;
+    margin-top: 60px;
+    display: flex;
+    background-image: 
+    linear-gradient( to bottom right, #05ae6b, #bdfeff ,#5dafb7 ,#dbeff0 , #05ae6b);
+}
+.about .image{
+    width: 300px;
+    height:300px;
+}
+.about img {
+    width: 100%;
+}
+.about .text{
+    background-color:  var(--div-background-color,#cdf8fc);
+    flex-basis : calc( 100% - 300px);
+    padding: 20px;
+}
+.about .text p:first-of-type{
+    color: var(--h3-main-text-color,#025866);
+    font-weight: bold;
+    line-height: 1.5;
+}
+hr{
+    border-color: #26c5dd;
+    width: 50%;
+    display: inline-block;
+}
+.about .text p:last-of-type{
+     color: var(--p-color,#278897);
+    line-height: 1.5;
+}
+/* end about */
+/* start contact */
+.contact .info{
+    margin: 60px;
+    text-align: center;
+}
+.contact .info p{
+    font-size : 35px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact .link{
+    display : block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--icons-spacial-header-color,#11b0b3);
+}
+.contact .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    gap: 5px;
+}
+.contact .social a{
+    color: var(--icons-spacial-header-color,#11b0b3);
+}
+/* end contact */
+.footer{
+    background-color:var(--div-background-color,#cdf8fc);
+    padding: 30px 10px;
+    color:var(--main-color,#011024);
+    text-align: center;
+    font-size: 18px;
+
+}
+.footer span{
+     color: var(--p-color,#278897);
+     font-weight: bold;
+     
+}
 /* mobile screens*/
 @media (max-width: 600px){
     .logo{
@@ -282,11 +421,11 @@ body{
     .landing .intro-text h1{
         font-size: 40px;
         margin-bottom: -18px;
-        text-shadow: 0 0 14px #011024;
+        text-shadow: 0 0 14px var(--main-color,#011024);
     }
     .landing .intro-text p{
         font-size: 18px;
-        text-shadow: 0 0 10px #011024;
+        text-shadow: 0 0 10px var(--main-color,#011024);
         margin-bottom: 28px;
     }
 
@@ -331,9 +470,22 @@ body{
 .services .serv{
     margin-bottom: 15px;
 }
+.about .content{
+    flex-direction: column;
+    text-align: center;
+    height: 100%
+}
+.about .image{
+    width: calc(100% - 1px);
+    height: calc(100% - 5px)
+}
+   .contact .info p,
+   .contact .info a{
+        font-size: 20px
+    }
 }
 /* tablet screens */
-@media (min-width: 601px) and (max-width: 1099px){
+@media (min-width: 600px) and (max-width: 1099px){
      .header{
         width: 98%;
     }
@@ -390,7 +542,24 @@ body{
     .services .serv{
         margin-bottom: 15px;
     }
-
+    .about .content{
+        flex-direction: column;
+        text-align: center;
+        background: none;
+        align-items: center;
+        gap: 10px;
+       
+    }
+    .about .image{
+          border: 5px solid transparent;
+         border-image:
+         linear-gradient( to bottom right, #05ae6b, #bdfeff ,#5dafb7 ,#dbeff0 , #05ae6b)1;
+          /* الرقم 1 معناه إن التدرج يتوزع على عرض البوردر */
+    }
+    .contact{
+        margin-top: 350px;
+    }
+ 
 }
 /* large screens */
 @media (min-width: 902px){
