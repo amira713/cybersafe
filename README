@@ -14,7 +14,7 @@ It demonstrates modern **HTML5** and **CSS3** techniques, including **Flexbox**,
 
 While working on this project, I learned a lot from the content of Elzero Web School, which helped me understand and apply the fundamentals of front-end development (HTML & CSS).
 Here is the tutorial series I followed during the project:
-HTML & CSS Course – Elzero Web School
+https://www.youtube.com/watch?v=MBq8ZFEIIaQ&list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF
 
 ### 🚀 Live Demo
 👉 [Live Preview](https://amira713.github.io/cybersafe/)  
@@ -24,20 +24,20 @@ HTML & CSS Course – Elzero Web School
 
 ### 📸 Screenshots
 **Desktop View**  
-![Desktop Screenshot](images/desktop-screenshot.webp)
+![Desktop Screenshot](./images/desktop-screenshot.webp)
 
-**tablet View**  
-![Desktop Screenshot](images/tablet-Screenshot.webp)
+**Tablet View**  
+![tablet Screenshot](./images/tablet-screenshot.webp)
 
 
 **Mobile View**  
-![Mobile Screenshot](./images/mobile-Screenshot.webp)
+![Mobile Screenshot](./images/mobile-screenshot.webp)
 
 ---
 
 ## العربي 🇪🇬
 
-**(CyberSafe)** هو موقع تعريقى عن الحلول الخاصه بالامن السيبرانى
+**(CyberSafe)** هو موقع تعريفى عن الحلول الخاصه بالامن السيبرانى
 المشروع معمول باستخدام **HTML5** و **CSS3** 
 وبيعرض تطبيق عملي لمفاهيم **Flexbox** و **Grid** 
 والتصميم المتجاوب مع الشاشات المختلفة (كمبيوتر، تابلت، موبايل).
@@ -48,6 +48,13 @@ HTML & CSS Course – Elzero Web School
 - استخدام أيقونات Font Awesome وخطوط Google Fonts.  
 - كود منظم وسهل القراءة.  
 - صور مضغوطة بصيغة WebP لسرعة التحميل.  
+
+🔹أثناء تنفيذ هذا المشروع اتعلمت  كثيرا من محتوى تطوير 
+Elzero Web School،
+ والذي ساعدني على فهم وتطبيقات أساسيات تطوير واجهات الويب 
+ (HTML & CSS).
+هذه هي السلسلة التعليمية التي تعلمت منها أثناء العمل على المشروع
+https://www.youtube.com/watch?v=MBq8ZFEIIaQ&list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF
 
 ### 🚀 العرض المباشر
 👉 [الموقع المباشر](https://amira713.github.io/cybersafe/)  
@@ -60,7 +67,7 @@ HTML & CSS Course – Elzero Web School
 ![Desktop Screenshot](./images/desktop-screenshot.webp)
 
 **عرض التابلت**  
-![Desktop Screenshot](./images/tablet-Screenshot.webp)
+![Tablet Screenshot](./images/tablet-screenshot.webp)
 
 **عرض الموبايل**  
-![Mobile Screenshot](./images/mobile-Screenshot.webp)
+![Mobile Screenshot](./images/mobile-screenshot.webp)
