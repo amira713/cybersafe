@@ -5,8 +5,8 @@
     --main-color: var(--main-color,#011024);
     --icons-spacial-header-color: var(--icons-spacial-header-color,#11b0b3);
     --h3-main-text-color: var(--h3-main-text-color,#025866);
-    --p-color:var(--p-color,#278897)
-    --div-color: var(--div-background-color,#cdf8fc)
+    --p-color:var(--p-color,#278897);
+    --div-color: var(--div-background-color,#cdf8fc);
 }
 body{
     font-family: "Roboto", sans-serif;
